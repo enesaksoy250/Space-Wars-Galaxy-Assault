@@ -9,7 +9,6 @@ public class PlayerHealth : MonoBehaviour
 
     TextMeshProUGUI healthText;
     Animator animator;
-    GameManager gameManager;
     Coroutine timerCoroutine;
     public float health; 
     private float initialHealth;
@@ -25,7 +24,6 @@ public class PlayerHealth : MonoBehaviour
 
         instance = this;      
         healthText=GameObject.Find("HealthText").GetComponent<TextMeshProUGUI>();
-        gameManager=FindObjectOfType<GameManager>();
         animator = GetComponent<Animator>();
         EnduranceControl();
         initialHealth = health;
@@ -37,7 +35,9 @@ public class PlayerHealth : MonoBehaviour
     public void ChangeHealth(float damage)
     {
 
-        if(health > 0 && gameManager.isPlaying && !shield)
+        bool isPlaying = GameManager.instance.isPlaying;
+
+        if(health > 0 && isPlaying && !shield)
         {
 
             health -= damage;
@@ -80,7 +80,7 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator Timer()
     {
 
-        while(health > 0)
+        while(health > 0 && GameManager.instance.isPlaying)
         {
 
             yield return new WaitForSeconds(1);
@@ -184,7 +184,7 @@ public class PlayerHealth : MonoBehaviour
     void LoadPanel()
     {
 
-        gameManager.LoadGameOverPanel();
+        GameManager.instance.LoadGameOverPanel();
 
     }
 

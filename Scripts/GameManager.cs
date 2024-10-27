@@ -20,10 +20,12 @@ public class GameManager : MonoBehaviour
     public bool isPlaying=false;
     private int gameDuration,starNumber,sceneIndex;
    
+    public static GameManager instance;
 
     private void Awake()
     {
- 
+        
+        instance = this;
         totalStationText.text = spaceStations.Length.ToString();
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
         SelectSpaceship();

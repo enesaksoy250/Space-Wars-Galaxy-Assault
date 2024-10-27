@@ -16,7 +16,6 @@ public class PlayerFire : MonoBehaviour
     [HideInInspector] public bool bulletFire=true;
     public float bulletPower;
     Coroutine firingCoroutine;
-    GameManager gameManager;
     
     public static PlayerFire instance;
 
@@ -24,7 +23,6 @@ public class PlayerFire : MonoBehaviour
     {
        
         instance = this;
-        gameManager = FindObjectOfType<GameManager>();
         BulletPowerControl();
       
     }
@@ -40,13 +38,14 @@ public class PlayerFire : MonoBehaviour
     {
 
         float playerHealth = PlayerHealth.instance.health;
+        bool isPlaying = GameManager.instance.isPlaying;
         
-        if (isFiring && firingCoroutine == null && playerHealth >0 && gameManager.isPlaying)
+        if (isFiring && firingCoroutine == null && playerHealth >0 && isPlaying)
         {
             firingCoroutine = StartCoroutine(FireContinuously());
         }
 
-        else if(firingCoroutine!=null && (!isFiring || playerHealth < 0 || !gameManager.isPlaying)) 
+        else if(firingCoroutine!=null && (!isFiring || playerHealth < 0 || !isPlaying)) 
         {
 
             StopCoroutine(firingCoroutine);

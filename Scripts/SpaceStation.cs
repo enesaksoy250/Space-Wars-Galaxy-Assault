@@ -15,7 +15,6 @@ public class SpaceStation : MonoBehaviour
     [SerializeField] float destructionScore;
     Animator animator;
     EnemyFire enemyFire;
-    GameManager gameManager;
     private bool isLoop=true;
     private float initialStationHealth;
     
@@ -59,7 +58,7 @@ public class SpaceStation : MonoBehaviour
             AudioManager.instance.PlayAudio("explosion");
             DataBaseManager.instance.UpdateFirebaseInfo("totalDestruction", 1);
             PlayerPoints.instance.ChangeScore(destructionScore);
-            gameManager.IncreaseNumber();
+            GameManager.instance.IncreaseNumber();
             //PlayerFire.instance.isFiring = false;
             StopCoroutine(CreateSpaceshipCoroutine());
             animator.Play("ExplosionForStation");
@@ -77,7 +76,7 @@ public class SpaceStation : MonoBehaviour
         while(true)
         {
 
-            if(PlayerHealth.instance.health > 0)
+            if(PlayerHealth.instance.health > 0 && GameManager.instance.isPlaying)
             {
 
                 Instantiate(spaceShip, transform.position, Quaternion.identity);
@@ -101,7 +100,6 @@ public class SpaceStation : MonoBehaviour
     private void FindObject()
     {
 
-        gameManager = FindObjectOfType<GameManager>();
         enemyFire = FindObjectOfType<EnemyFire>();
         animator = GetComponent<Animator>();
 

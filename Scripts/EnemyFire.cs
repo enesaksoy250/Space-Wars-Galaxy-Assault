@@ -12,7 +12,6 @@ public class EnemyFire : MonoBehaviour
     [SerializeField] float bulletSpeed, bulletLifetime,firingRate;
     GameObject player;
     Coroutine firingCoroutinePlayer;
-    GameManager gameManager;
     public bool isFiringToPlayer=false;
     private Rigidbody2D rigidbody;
 
@@ -21,7 +20,6 @@ public class EnemyFire : MonoBehaviour
  
         rigidbody = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player");
-        gameManager = FindObjectOfType<GameManager>();
 
     }
 
@@ -38,15 +36,16 @@ public class EnemyFire : MonoBehaviour
 
 
         float playerHealth = PlayerHealth.instance.health;
+        bool isPlaying = GameManager.instance.isPlaying;
         
-        if ((playerHealth >0) && (isFiringToPlayer) && firingCoroutinePlayer == null&&gameManager.isPlaying)
+        if ((playerHealth >0) && (isFiringToPlayer) && firingCoroutinePlayer == null && isPlaying)
         {
          
             firingCoroutinePlayer = StartCoroutine(FireToPlayerCoroutine());
     
         }
         
-        else if ((playerHealth <=0 || !isFiringToPlayer||!gameManager.isPlaying) && firingCoroutinePlayer != null)
+        else if ((playerHealth <=0 || !isFiringToPlayer||!isPlaying) && firingCoroutinePlayer != null)
         {
         
             StopCoroutine(firingCoroutinePlayer);

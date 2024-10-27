@@ -44,11 +44,10 @@ public class Stopwatch : MonoBehaviour
              if(time <= 0)
              {
                
-                  isRunning = false;
-                  time = 0;
-                  GameManager gameManager = FindObjectOfType<GameManager>();
-                  gameManager.isPlaying = false;
-                  gameManager.EndGameControl();
+                isRunning = false;
+                time = 0;
+                GameManager.instance.isPlaying = false;
+                GameManager.instance.EndGameControl();         
                                 
              } 
                                                              
