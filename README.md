@@ -4,8 +4,8 @@ Bu proje, Unity kullanılarak geliştirilmiş bir 2D uzay savaşı temalı oyund
 
 ## 🎮 Özellikler
   
-  **Online Ve Offline Oyun Modu:** Tek başınıza oynayabilir veya diğer oyunculara karşı mücadele edebilirsiniz.
-  **Dinamik Oyun Mekanikleri:** Oyuncu gemisi hareket eder, ateş eder ve düşmanlara karşı savunma yapar.
-  **Yükselen Zorluk Seviyesi:** Oyunda ilerledikçe düşman sayısı ve zorluğu artar.
+  **Online Ve Offline Oyun Modu:** Tek başınıza oynayabilir veya diğer oyunculara karşı mücadele edebilirsiniz.<br>
+  **Dinamik Oyun Mekanikleri:** Oyuncu gemisi hareket eder, ateş eder ve düşmanlara karşı savunma yapar.<br>
+  **Yükselen Zorluk Seviyesi:** Oyunda ilerledikçe düşman sayısı ve zorluğu artar.<br>
   **Puanlama Sistemi:** Her yok edilen düşman gemisi için puan kazanılır.
   
