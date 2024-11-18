@@ -9,3 +9,16 @@ Bu proje, Unity kullanılarak geliştirilmiş bir 2D uzay savaşı temalı oyund
   **Yükselen Zorluk Seviyesi:** Oyunda ilerledikçe düşman sayısı ve zorluğu artar.<br>
   **Puanlama Sistemi:** Her yok edilen düşman gemisi için puan kazanılır.
   
+## Ekran Görüntüleri
+
+![Oyun Görüntüsü](https://imgur.com/4dnX9k4)
+&nbsp;
+![Oyun Görüntüsü]()
+&nbsp;
+![Oyun Görüntüsü]()
+&nbsp;
+![Oyun Görüntüsü]()
+&nbsp;
+![Oyun Görüntüsü]()
+&nbsp;
+![Oyun Görüntüsü]()
