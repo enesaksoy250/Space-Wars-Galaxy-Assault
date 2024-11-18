@@ -11,7 +11,7 @@ Bu proje, Unity kullanılarak geliştirilmiş bir 2D uzay savaşı temalı oyund
   
 ## Ekran Görüntüleri
 
-![Oyun Görüntüsü](https://imgur.com/4dnX9k4.jpg)
+![Oyun Görüntüsü](https://imgur.com/XwG8K8r.jpg)
 &nbsp;
 ![Oyun Görüntüsü](https://imgur.com/XKpjv0A.jpg)
 &nbsp;
@@ -21,4 +21,4 @@ Bu proje, Unity kullanılarak geliştirilmiş bir 2D uzay savaşı temalı oyund
 &nbsp;
 ![Oyun Görüntüsü](https://imgur.com/TgZXX3j.jpg)
 &nbsp;
-![Oyun Görüntüsü](https://imgur.com/XwG8K8r.jpg)
+![Oyun Görüntüsü](https://imgur.com/4dnX9k4.jpg)
