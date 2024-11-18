@@ -8,6 +8,14 @@ Bu proje, Unity kullanılarak geliştirilmiş bir 2D uzay savaşı temalı oyund
   **Dinamik Oyun Mekanikleri:** Oyuncu gemisi hareket eder, ateş eder ve düşmanlara karşı savunma yapar.<br>
   **Yükselen Zorluk Seviyesi:** Oyunda ilerledikçe düşman sayısı ve zorluğu artar.<br>
   **Puanlama Sistemi:** Her yok edilen düşman gemisi için puan kazanılır.
+
+## 💻 Kullanılan Teknolojiler
+
+  **Unity:** Oyun motoru.<br>
+  **C#:** Oyun kodlaması için kullanılan ana programlama dili.<br>
+  **Firebase:** Kullanıcı verilerini yönetmek için.<br>
+  **Photon PUN:**  Online oyun modunda gerçek zamanlı eşleştirme ve çok oyunculu desteği.
+  
   
 ## Ekran Görüntüleri
 
