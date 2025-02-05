@@ -25,10 +25,6 @@ Bu proje, Unity kullanılarak geliştirilmiş bir 2D uzay savaşı temalı oyund
 &nbsp;
 ![Oyun Görüntüsü](Screenshots/3.jpg)
 &nbsp;
-![Oyun Görüntüsü](Screenshots/4.jpg)
-&nbsp;
-![Oyun Görüntüsü](Screenshots/5.jpg)
-&nbsp;
 ![Oyun Görüntüsü](Screenshots/6.jpg)
 &nbsp;
 ![Oyun Görüntüsü](Screenshots/7.jpg)
