@@ -15,7 +15,10 @@ Bu proje, Unity kullanılarak geliştirilmiş bir 2D uzay savaşı temalı oyund
   **C#:** Oyun kodlaması için kullanılan ana programlama dili.<br>
   **Firebase:** Kullanıcı verilerini yönetmek için.<br>
   **Photon PUN:**  Online oyun modunda gerçek zamanlı eşleştirme ve çok oyunculu desteği.
-  
+
+## 📲 Oyunu İndir
+
+[![Google Play'de Mevcut](https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg)](https://play.google.com/store/apps/detailsid=com.DefaultCompany.SpaceWarsGalaxyAssault&pcampaignid=web_share)  
   
 ## Ekran Görüntüleri
 
